@@ -1,3 +1,4 @@
+load("stack.js");
 function Set() {
  this.dataStore = [];
  this.add = add;
@@ -106,12 +107,25 @@ function union(set) {
 }
 
 // heigher
+// function to find the number that is higher than element but
+// still the closest one to it 
+// from the set
 function heigher(element) {
+  var numHigh = new Stack();
   // go through all elements in set
   for (var i = 0; i < this.size(); ++i){
     // if set element is higher than element
     if (this.dataStore[i] > element){
-      print(this.dataStore[i]);
-    }
-  }
+      //if stack empty push the number to stack
+      //else if the element at the top is greater than number pop it and
+      //push the new number to stack
+      if (numHigh.length() == 0){
+	numHigh.push(this.dataStore[i]);
+      }else if( this.dataStore[i] < numHigh.peek()){
+        numHigh.pop();
+	numHigh.push(this.dataStore[i]);
+      } // end second if
+    } // end first if
+  } // end for
+  return numHigh.pop(); // return the last num on the stack
 }
