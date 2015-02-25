@@ -1,6 +1,12 @@
 /*
  * Danilo Zekovic
  * 2/24/2015
+ * Chapter 9, problem #3
+ * Using d8
+ * Problem: Add the function hiegher(element) to the Set class.
+ * This function returns the least elementin the set strictly
+ * greater than the given element. Test your function in a program.
+ *
  */
 
 load("set.js");
