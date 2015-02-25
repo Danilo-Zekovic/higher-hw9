@@ -9,6 +9,7 @@ function Set() {
  this.subset = subset;
  this.difference = difference;
  this.show = show;
+ this.heigher = heigher;
 }
 
 function add(data) {
@@ -102,4 +103,15 @@ function union(set) {
      }
    }
  return tempSet;
+}
+
+// heigher
+function heigher(element) {
+  // go through all elements in set
+  for (var i = 0; i < this.size(); ++i){
+    // if set element is higher than element
+    if (this.dataStore[i] > element){
+      print(this.dataStore[i]);
+    }
+  }
 }
