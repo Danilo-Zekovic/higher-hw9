@@ -14,3 +14,5 @@ numbers.add(4);
 numbers.add(8);
 
 print(numbers.show());
+
+numbers.heigher(4);
