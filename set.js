@@ -1,3 +1,8 @@
+/*
+ * Danilo Zekovic
+ * 2/25/2015
+ * define the Set
+ */
 load("stack.js");
 function Set() {
  this.dataStore = [];
