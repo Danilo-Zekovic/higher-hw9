@@ -1,3 +1,8 @@
+/*
+ * Danilo Zekovic
+ * 2/24/2015
+ */
+
 load("set.js");
 // create set
 var numbers = new Set();
@@ -13,6 +18,6 @@ numbers.add(1);
 numbers.add(4);
 numbers.add(8);
 
-print(numbers.show());
-
-numbers.heigher(4);
+print("Elements of set: " + numbers.show());
+var findG = 4;
+print("Number greater than: " + findG + " is " + numbers.heigher(findG));
